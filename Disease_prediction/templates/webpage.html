@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+    html,
+    body,
+    header,
+    #intro {
+    height: 100%;
+    }
+    img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+    .topnav {
+      background-color: #333;
+      overflow: hidden;
+    }
+     /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(20, 74, 95);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #2970a0;
+    color: white;
+  }
+    </style>
+    <title>Diabetes Prediction</title>
+  </head>
+  <body>
+    <header>
+        <div id="intro" class="container-fluid view ">
+          <div class="topnav">
+            <a class="active" href="home.html">Home</a>
+            <a href="webpage.html">Diabetes Predictor</a>
+            <a href="heart_webpage.html">Heart Failure Predictor</a>
+          </div>
+
+          <h1 class="text-center text-capitalize pt-5">DIABETES PREDICTION</h1>
+            <hr class="w-75 mx-auto pt-5">
+            <div class="row mb-5">
+              <div class="col-lg-6 col-md-6 col-12 my-auto">
+                <img src="../static/diabetes_img.jpg" class="float-left">
+              </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <form method="POST" action="/result">
+              <div class="form-group">
+                <!-- TODO : Year to accept only year date picker -->
+                <label >No. of Pregnancies</label>
+                <input class="form-control" type="text"  name="pregnancies"  placeholder="No. of Pregnancies">
+              </div>
+              <div class="form-group">
+                <label >Glucose Level</label>
+                <input class="form-control" type="text"  name="Present_Price"  placeholder="Glucose Level">
+              </div>
+              <div class="form-group">
+                <label >Current Blood Pressure</label>
+                <input class="form-control" type="text"  name="BloodPressure"placeholder="Current Blood Pressure">
+              </div>
+              <div class="form-group">
+                <label >Skin Thickness</label>
+                <input class="form-control" type="text"  name="SkinThickness"  placeholder="Skin Thickness">
+              </div>
+              <div class="form-group">
+                <label >Insulin Levels</label>
+                <input class="form-control" type="text"  name="Insulin"  placeholder="Insulin Levels">
+              </div>
+              <div class="form-group">
+                <label >Enter the Body Mass Index</label>
+                <input class="form-control" type="text"  name="BMI" required="required" placeholder="Body Mass Index">
+              </div>
+              <div class="form-group">
+                <label >Diabetes Pedigree Function</label>
+                <input class="form-control" type="text"  name="DiabetesPedigreeFunction"  placeholder="Diabetes Pedigree Function">
+              </div>
+              <div class="form-group">
+                <label>Age</label>
+                <input class="form-control" type="text"  name="Age" required="required" placeholder="Age">
+              </div>
+              <input type="submit" class="btn btn-danger">
+            </form>
+        </div>
+      </div>
+    </div>
+    </header>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>   
+  </body>
+</html>
